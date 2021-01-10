@@ -1,0 +1,502 @@
+body
+		{
+			margin:0 ;
+			padding: 0 ;
+			cursor: url('paw.png'), pointer ;
+		}
+		.wrapper
+		{
+			position: absolute;
+			width: 100% ;
+			margin-top: 0 ;
+			height: 100% ;
+			overflow: hidden;
+			background: rgb(40,125,125);
+			background: radial-gradient(circle, rgba(40,125,125,1) 0%, rgba(28,52,77,1) 100%);
+		}
+		h2{
+			font-family: poppins ;
+			position: absolute;
+			top:45%;
+			left: 40% ;
+			transform:translate(-50%,-50%);
+			font-size:50px ;
+			font-family: bold ;
+			color:#fff;
+			text-transform: uppercase;
+			margin: 0 ;
+			font-family: 'Sen', sans-serif;
+		}
+		.box div
+		{
+			position: absolute;
+			width: 60px ;
+			height: 60px ;
+			background-color: transparent;
+			border: 6px solid #91C46C ;
+		}
+		.box div:nth-child(1)
+		{
+			top:12%;
+			left: 42% ;
+			animation:animate 10s linear infinite;
+		}
+		.box div:nth-child(2)
+		{
+			top: 70% ;
+			left: 50% ;
+			animation: animate 7s linear infinite ;
+		}
+		.box div:nth-child(3)
+		{
+			top: 17% ;
+			left: 6% ;
+			animation: animate 9s linear infinite ;
+		}
+		.box div:nth-child(4)
+		{
+			top: 20% ;
+			left: 60% ;
+			animation: animate 10s linear infinite ;
+		}
+		.box div:nth-child(5)
+		{
+			top: 67% ;
+			left: 10% ;
+			animation: animate 10s linear infinite ;
+		}
+		.box div:nth-child(6)
+		{
+			top: 80% ;
+			left: 70% ;
+			animation: animate 12s linear infinite ;
+		}
+		.box div:nth-child(7)
+		{
+			top: 60% ;
+			left: 80% ;
+			animation: animate 15s linear infinite ;
+		}
+		.box div:nth-child(8)
+		{
+			top: 32% ;
+			left: 25% ;
+			animation: animate 16s linear infinite ;
+		}
+		.box div:nth-child(9)
+		{
+			top: 90% ;
+			left: 25% ;
+			animation: animate 9s linear infinite ;
+		}
+		.box div:nth-child(10)
+		{
+			top: 20% ;
+			left: 80% ;
+			animation: animate 5s linear infinite ;
+		}
+		@keyframes animate {
+			0%{
+				transform: scale(0) translateY(0) rotate(0);
+				opacity: 1 ;
+			}
+			100%{
+				transform: scale(1.3) translateY(-90px) rotate(360deg);
+				opacity: 0 ;
+			}
+		}
+		.fixed-header, .fixed-footer{
+			width: 100%;
+			position: fixed;
+			background: #C6E070;
+			font-family: 'Sen', sans-serif;
+			text-align: center;
+		}
+		.fixed-header{
+			top: 0;
+			font-size: 30px ;
+			font-weight: bold ;
+			color:#fff;
+			text-transform: uppercase;
+			padding:5px 0;
+			margin: 0 ;
+		}
+		.fixed-footer{
+			bottom: 0;
+			padding: 10px 0;
+			font-size: 20px ;
+		}
+		.container{
+			width: 100%;
+			color: #287D7D ;
+			display: inline;
+			text-align: center;
+		}
+		#main-content{
+			text-align: center ;
+			margin-top: 13% ;
+			justify-content: center;
+		}
+		#header {
+			display: inline;
+			text-align: right ;
+			float:right;
+			font-size: 15px ;
+			text-transform: none !important ;
+		}
+		#head-text{
+			justify-content: center;
+			padding: 0 ;
+			margin : 0 ;
+			margin-left: 11% ;
+		}
+		#head-img{
+			float: left ;
+		}
+		@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+		@import url("https://fonts.googleapis.com/css?family=Roboto");
+		.uploader {
+			display: flex;
+			margin: 0 auto ;
+			clear: both;
+			width: 100%;
+			max-width: 600px;
+			justify-content: center;
+			cursor: url('paw.png'), pointer ;
+		}
+		.uploader label {
+			float: left;
+			clear: both;
+			width: 100%;
+			padding: 2rem 1.5rem;
+			text-align: center;
+			background: #fff;
+			border-radius: 7px;
+			border: 3px solid #eee;
+			-webkit-transition: all .2s ease;
+			transition: all .2s ease;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		.uploader label:hover {
+			border-color: #C6E070;
+		}
+		.uploader label.hover {
+			border: 3px solid #C6E070;
+			box-shadow: inset 0 0 0 6px #eee;
+		}
+		.uploader label.hover #start i.fa {
+			-webkit-transform: scale(0.8);
+			transform: scale(0.8);
+			opacity: 0.3;
+		}
+		.uploader #start {
+			float: left;
+			clear: both;
+			width: 100%;
+		}
+		.uploader #start.hidden {
+			display: none;
+		}
+		.uploader #start i.fa {
+			font-size: 50px;
+			margin-bottom: 1rem;
+			-webkit-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+		}
+		.uploader #response {
+			float: left;
+			clear: both;
+			width: 100%;
+		}
+		.uploader #response.hidden {
+			display: none;
+		}
+		.uploader #response #messages {
+			margin-bottom: .5rem;
+		}
+		.uploader #file-image {
+			display: inline;
+			margin: 0 auto .5rem auto;
+			width: auto;
+			height: auto;
+			max-width: 180px;
+		}
+		.uploader #file-image.hidden {
+			display: none;
+		}
+		.uploader #notimage {
+			display: block;
+			float: left;
+			clear: both;
+			width: 100%;
+		}
+		.uploader #notimage.hidden {
+			display: none;
+		}
+		.uploader progress,
+		.uploader .progress {
+			display: inline;
+			clear: both;
+			margin: 0 auto;
+			width: 100%;
+			max-width: 180px;
+			height: 8px;
+			border: 0;
+			border-radius: 4px;
+			background-color: #eee;
+			overflow: hidden;
+		}
+		.uploader .progress[value]::-webkit-progress-bar {
+			border-radius: 4px;
+			background-color: #eee;
+		}
+		.uploader .progress[value]::-webkit-progress-value {
+			background: -webkit-gradient(linear, left top, right top, from(#393f90), color-stop(50%, #454cad));
+			background: linear-gradient(to right, #393f90 0%, #454cad 50%);
+			border-radius: 4px;
+		}
+		.uploader .progress[value]::-moz-progress-bar {
+			background: linear-gradient(to right, #393f90 0%, #454cad 50%);
+			border-radius: 4px;
+		}
+		.uploader input[type="file"] {
+			display: none;
+		}
+		.uploader div {
+			margin: 0 0 .5rem 0;
+			color: #5f6982;
+		}
+		.uploader .btn {
+			display: inline-block;
+			margin: .5rem .5rem 1rem .5rem;
+			clear: both;
+			font-family: inherit;
+			font-weight: 700;
+			font-size: 14px;
+			text-decoration: none;
+			text-transform: initial;
+			border: none;
+			border-radius: .2rem;
+			outline: none;
+			padding: 0 1rem;
+			height: 36px;
+			line-height: 36px;
+			color: #1C344D;
+			-webkit-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+			box-sizing: border-box;
+			background: #C6E070;
+			border-color: #C6E070;
+			cursor: url('pawblack.png'), pointer ;
+			cursor: pointer;
+		}
+		.content{
+			justify-content: center;
+			align-self: center;
+			margin-top: 23vh ;
+		}
+		.button-parrot .parrot {
+			position: absolute;
+			width: 60px;
+			text-align: center;
+			animation: blink 0.8s infinite;
+			color: transparent;
+			display: block ;
+			justify-content: center;
+			align-self: center;
+			margin: 0 auto ;
+			text-align: center;
+			margin-left: 20px ;
+		}
+		.button-parrot .parrot:before {
+			content: "SEE!";
+		}
+		.button-parrot .parrot:nth-child(1) {
+			top: -30px;
+			left: -40px;
+			font: 12px/1 "Margarine", sans-serif;
+			transform: rotate(-20deg);
+			animation-duration: 0.5s;
+		}
+		.button-parrot .parrot:nth-child(2) {
+			font: 12px/1 "Margarine", sans-serif;
+			right: -40px;
+			top: -20px;
+			transform: rotate(15deg);
+			animation-duration: 0.3s;
+		}
+		.button-parrot .parrot:nth-child(3) {
+			font: 16px/1 "Margarine", sans-serif;
+			top: -60px;
+			left: 15px;
+			transform: rotate(10deg);
+			animation-duration: 1s;
+		}
+		.button-parrot .parrot:nth-child(4) {
+			font: 18px/1 "Margarine", sans-serif;
+			top: -70px;
+			left: 95px;
+			transform: rotate(2deg);
+			animation-duration: 0.7s;
+		}
+		.button-parrot .parrot:nth-child(5) {
+			font: 14px/1 "Margarine", sans-serif;
+			top: 80px;
+			left: 105px;
+			transform: rotate(-20deg);
+			animation-duration: 0.8s;
+		}
+		.button-parrot .parrot:nth-child(6) {
+			font: 12px/1 "Margarine", sans-serif;
+			top: 80px;
+			left: 5px;
+			transform: rotate(10deg);
+			animation-duration: 1.2s;
+		}
+		#file-drag
+		{
+		    cursor: url('pawblack.png'), pointer ;
+		}
+		.button-parrot button:hover .parrot:before {
+			content: "Do it!";
+			width: 70px;
+		}
+
+		@keyframes blink {
+			25%,
+			75% {
+				color: transparent;
+			}
+			40%,
+			60% {
+				color: #fff;
+			}
+		}
+		button {
+			background: transparent;
+			display: flex;
+			color: #fff;
+			border: 3px solid #fff;
+			border-radius: 50px;
+			padding: 0.8rem 2rem;
+			font: 24px "Margarine", sans-serif;
+			outline: none;
+			cursor: pointer;
+			position: relative;
+			transition: 0.2s ease-in-out;
+			letter-spacing: 2px;
+			float: left;
+			margin-top: 10vh ;
+			margin-left: 45% ;
+			cursor: url('paw.png'), pointer ;
+		}
+
+		.name {
+			width: 100%;
+			text-align: center;
+			padding: 0 0 3rem;
+			padding-top: 5px ;
+			font-size: 14px ;
+			letter-spacing: .5px;
+			text-transform: uppercase;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+			display: flex;
+			justify-content: center;
+			margin: 0 auto ;
+			color: #C6E070 ;
+			font-family: 'Sen', sans-serif;
+		}
+
+		.button__wrapper {
+			display: block;
+			position: relative;
+			width: 200px;
+			height: 75px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+.loader {
+	display: none ;
+  color: #C6E070;
+  font-size: 90px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 45px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+@-webkit-keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

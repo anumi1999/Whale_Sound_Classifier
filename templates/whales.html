@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Animal</title>
+	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleEven.css') }}">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="paw.png"/>
+	<style type="text/css">
+		@media(max-width: 500px ){
+  #header{
+    display: none;
+  }
+  #head-text{
+    text-align: center;
+  }
+  #head-img
+  {
+    display: none ;
+  }
+}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="fixed-header">
+			<img id="head-img" src="interface.png" width="40px" height="40px">
+			<div class="container">
+				<span id="head-text">WHALIFIER</span>
+			</div>
+		</div>
+		<div class="box">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="content">
+			<form id="file-upload-form" class="uploader" method="POST" action="/result" enctype="multipart/form-data">
+				<input id="file-upload" type="file" name="fileUpload" accept="audio/*" />
+				<label for="file-upload" id="file-drag">
+					<div id="start">
+						<i class="fa fa-download" aria-hidden="true"></i>
+						<div>Select a file or drag here</div>
+						<div id="notimage" class="hidden">Please select audio</div>
+						<span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+					</div>
+					<div id="response" class="hidden">
+						<div id="messages"></div>
+						<progress class="progress" id="file-progress" value="0">
+							<span>0</span>%
+						</progress>
+					</div>
+				</label>
+			</form>
+			<div class="submit">
+				<div class="item button-parrot" style="--bg-color: #2c3e50">
+					<button form="file-upload-form" id='see'onclick="load()">SEE!!
+						<div class="parrot"></div>
+						<div class="parrot"></div>
+						<div class="parrot"></div>
+						<div class="parrot"></div>
+						<div class="parrot"></div>
+						<div class="parrot"></div>
+					</button>
+					<div class="name">Let me look!!</div>
+				</div>
+				<div class="loader">Loading...</div>
+			</div>
+		</div>
+		<div class="fixed-footer">
+			<div class="container">Lets love whales and save them </div>        
+		</div>
+			<script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
