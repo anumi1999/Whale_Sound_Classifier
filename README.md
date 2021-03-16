@@ -7,6 +7,10 @@ The starting page of the website is:
 After uploading the audio the audio waves are sampled and using Machine Learning the whales are being predicted. Here is one of the examples: 
 ![screencapture-localhost-5000-result-2021-03-16-11_57_17](https://user-images.githubusercontent.com/52823306/111265226-c83dda80-864e-11eb-83a2-7fbceaa5e189.png)
 
+## Technologies Used 
+1. Random Forest
+2. Signal Processing
+
 ## Demo
 Here is an audio file. Note that this is mp4 format file. FOr the website .wav files are to be used strictly.
 https://user-images.githubusercontent.com/52823306/111274308-dd206b00-865a-11eb-81fa-31f965532e4b.mp4
