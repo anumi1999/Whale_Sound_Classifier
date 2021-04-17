@@ -9,7 +9,6 @@ from sklearn.ensemble import RandomForestClassifier
 import pickle as pkl
 
 def catOrDog(fileName):
-    print('Cat Dog')
     if 'FalseKW' in fileName:
         return 'False Killer Whale'
     elif 'SouthRW' in fileName:
